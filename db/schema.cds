@@ -24,7 +24,7 @@ entity CustomerMessage : cuid
     fullMessageCustomerLanguage : String(1000);
     fullMessageEnglish : String(1000);
     suggestedResponseEnglish : String(500);
-    suggestedResponseCustomerLanguage : String(500);
+    suggestedResponseCustomerLanguage : String(1000);
     S4HCP_ServiceOrder : Association to one S4HCP_ServiceOrder_Odata.A_ServiceOrder;
 }
 
