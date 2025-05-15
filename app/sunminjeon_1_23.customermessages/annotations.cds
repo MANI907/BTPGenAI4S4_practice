@@ -94,6 +94,11 @@ annotate service.CustomerMessage with @(
             Action : 'sunminJeon_1_23Srv.Action1',
             Label : 'Generate Reply',
         },
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action : 'sunminJeon_1_23Srv.Action2',
+            Label : 'Maintain SO',
+        },
     ],
 );
 

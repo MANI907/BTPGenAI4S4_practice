@@ -10,17 +10,25 @@ service sunminJeon_1_23Srv
         projection on my.CustomerMessage
         actions
         {
-          @(
-          cds.odata.bindingparameter.name: '_it',
-            Common.SideEffects: {TargetProperties: [
-            '_it/suggestedResponseEnglish',
-            '_it/suggestedResponseCustomerLanguage'
-          ]}
-          )
-
-          action Action1
-          (
-          );
+            @cds.odata.bindingparameter.name : '_it'
+            @Common.SideEffects : 
+            {
+                TargetProperties :
+                [
+                    '_it/suggestedResponseEnglish',
+                    '_it/suggestedResponseCustomerLanguage'
+                ]
+            }
+            action Action1
+            (
+            );
+            @(
+            cds.odata.bindingparameter.name: '_it',
+            Common.SideEffects: {TargetProperties: ['_it/S4HCP_ServiceOrder_ServiceOrder']}
+            )
+            action Action2
+            (
+            );
         };
 
     entity A_ServiceOrder as
