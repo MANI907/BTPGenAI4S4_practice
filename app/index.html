@@ -27,7 +27,7 @@
                     return Controller.extend("PreviewController", {
                         onInit: function () {
 
-                            const data = {"Services":[{"ServiceName":"sunminJeon_1_23Srv","DetailsURL":"./service/sunminJeon_1_23/","Metadata":"./service/sunminJeon_1_23/$metadata","Entities":[{"Name":"CustomerMessage","URL":"./service/sunminJeon_1_23/CustomerMessage","FioriURL":"$fiori-preview/sunminJeon_1_23Srv/CustomerMessage#preview-app"}],"EntitiesCount":1}]}
+                            const data = {"Services":[{"ServiceName":"sunminJeon_1_23Srv","DetailsURL":"./service/sunminJeon_1_23/","Metadata":"./service/sunminJeon_1_23/$metadata","Entities":[{"Name":"CustomerMessage","URL":"./service/sunminJeon_1_23/CustomerMessage","FioriURL":"$fiori-preview/sunminJeon_1_23Srv/CustomerMessage#preview-app"},{"Name":"A_ServiceOrder","URL":"./service/sunminJeon_1_23/A_ServiceOrder","FioriURL":"$fiori-preview/sunminJeon_1_23Srv/A_ServiceOrder#preview-app"},{"Name":"ProductFAQ","URL":"./service/sunminJeon_1_23/ProductFAQ","FioriURL":"$fiori-preview/sunminJeon_1_23Srv/ProductFAQ#preview-app"}],"EntitiesCount":3}]}
                             this.getView().setModel(new JSONModel(data));
                         }
                     });
